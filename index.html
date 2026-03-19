@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Juliana Nascimento dos Santos" />
+    <title>Prices Cards</title>
+    <link rel="icon" type="image/png" href="prices.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- usa-se __(underline2x) no nome da classe para evitar que estilo vazem para fora do elemento que ele pertence. -->
+      <div class="header__logo">MyServer</div>
+      <!-- NAV - IDEAL PARA FAZER MENU, MAS SEMPRE PRECISARÁ DE UM LISTA: UL -->
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="header_menu--active">Planos</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="main-title">
+        Escolha seu <span class="h1modificado">plano</span>
+      </h1>
+
+      <section class="pricing">
+        <!-- PRIMEIRO BLOCO -->
+        <div class="pricing-plan">
+          <h2 class="princing-plan__title">Essencial</h2>
+          <p><span class="pricing-plan__preco">R$ 3.95/mês</span></p>
+          <ul class="princing-plan__features">
+            <li>1 Website</li>
+            <li>1GB de Armazenamento</li>
+            <li>10GB de transferência</li>
+          </ul>
+          <!-- cta = call to action = chamada para a ação -->
+          <a href="#" class="pricing-plan__cta">Assine Já</a>
+        </div>
+
+        <!-- SEGUNDO BLOCO -->
+        <div class="pricing-plan">
+          <h2 class="princing-plan__title">Premium</h2>
+          <p><span class="pricing-plan__preco">R$ 7.95/mês</span></p>
+          <ul class="princing-plan__features">
+            <li>5 Websites</li>
+            <li>3GB de Armazenamento</li>
+            <li>Transferência ilimitada</li>
+            <li>10 horas de suporte mensais</li>
+          </ul>
+          <!-- cta = call to action = chamada para a ação -->
+          <a href="#" class="pricing-plan__cta">Assine Já</a>
+        </div>
+
+        <!-- TERCEIRO BLOCO -->
+          <div class="pricing-plan">
+          <h2 class="princing-plan__title">Gold</h2>
+          <p><span class="pricing-plan__preco">R$ 13.95/mês</span></p>
+          <ul class="princing-plan__features">
+            <li>10 Websites</li>
+            <li>30GB de Armazenamento</li>
+            <li>Transferência ilimitada</li>
+            <li>30 horas de suporte mensais</li>
+            <li>Email personalizado</li>
+          </ul>
+          <!-- cta = call to action = chamada para a ação -->
+          <a href="#" class="pricing-plan__cta">Assine Já</a>
+
+
+      </section>
+    </main>
+  </body>
+</html>

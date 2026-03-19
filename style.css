@@ -1,0 +1,126 @@
+body{
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-title{
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+    
+}
+
+.header{
+    display: flex;
+    background-color: #05080a;
+    /* border-bottom: 0.2px solid #cbe300; */
+    /* background-color: rgb(124, 124, 124); */
+    box-shadow: 0 0 1px #cbe300;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+.header__menu{
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+.header__menu a{
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+}
+a.header_menu--active{
+    background-color: #cbe300;
+    color: #0c1014;
+    /* código abaixo serve para que o elemento n receba o evento de clique do mouse */
+    pointer-events: none;
+    /* cursor: default; */
+}
+.header__menu a:hover{
+    text-decoration: underline;
+}
+.pricing {
+    display: flex;
+    gap: 16px;
+    
+}
+
+.pricing-plan {
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 3px 2px #cbe300;
+    /* box-shadow: 0 5px 12px black; */
+    display: flex;
+    flex-direction: column;
+}
+.princing-plan__title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+.pricing-plan p{
+    margin-top: 0;
+}
+.pricing-plan__preco{
+    font-size: 34px;
+}
+.princing-plan__features{
+    /* 0 = pra cima 0 = pra direita 35px para baixo 0 para esquerda mas n precisa colocar */
+    margin: 0 0 35px;
+    color:#b5b5b5;
+    padding-left: 16px;
+    /* código abaixo tamanho da linha */
+    line-height: 1.8;
+    /*  comando abaixo coloca o pricing-plan__cta para baixo, no rodapé e alinhado */
+    flex-grow: 1;
+}
+/* código abaixo serve para mudar a cor da bolinha da lista. Conceito de pseudo elemento, usa-se ::  */
+.princing-plan__features li::marker{
+color: #cbe300;
+}
+.pricing-plan__cta{
+    text-decoration: none;
+    color:#0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+    /* Código abaixo deixa todos os botões alinhados independente do conteúdo de cada bloco */
+    margin-block-start: auto;
+}
+.pricing-plan__cta:hover{
+    /* outline é melhor, pra fora, sem interferir o elemento */
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: white;
+    
+}
+.h1modificado{
+    color:#cbe300;
+}
+.princing-plan__dados{
+    list-style-type: none;
+    color: aqua;
+    font-size: 26px;
+    text-align: center;
+}
